@@ -13,26 +13,38 @@ This project generates synthetic sales data for a fictional superstore, simulati
 
 ## Project Stucture 
 
-synthetic-data-project/
+- `src/`: Contains the main Python scripts
+- `data/`: Stores the generated synthetic data
+- `notebooks/`: Jupyter notebooks for exploratory data analysis
+- `tests/`: Unit tests for the project
+- `results/`: Stores generated visualizations and analysis results
+- `app/`: Contains a simple dashboard for data visualization
+
+synthetic-data-generator/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   └── synthetic_data.csv
+│   └── synthetic_superstore_data.csv
 ├── src/
 │   ├── data_generation.py
-│   ├── anomaly_detection.py
-│   └── visualization.py
+│   ├── data_analysis.py
+│   └── data_visualization.py
 ├── notebooks/
-│   └── analysis.ipynb
+│   └── exploratory_data_analysis.ipynb
 ├── tests/
 │   ├── test_data_generation.py
-│   └── test_anomaly_detection.py
+│   └── test_data_analysis.py
 ├── results/
-│   ├── arima_forecast.png
-│   └── detected_anomalies.png
+│   ├── sales_trend.png
+│   └── product_category_distribution.png
 └── app/
-    ├── app.py
-    └── templates/
-        └── index.html
-## Usage
-To generate synthetic data:
+├── dashboard.py
+└── templates/
+└── index.html
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
